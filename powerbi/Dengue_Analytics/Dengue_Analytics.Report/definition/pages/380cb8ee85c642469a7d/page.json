@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "380cb8ee85c642469a7d",
+  "displayName": "03_Pronosticos",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

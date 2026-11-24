@@ -1,0 +1,79 @@
+table dim_distrito
+	lineageTag: 5630d3cc-d868-4211-8944-f1e517de374e
+
+	column ubigeo
+		dataType: string
+		lineageTag: e2cf8923-de36-4f9d-b6bf-31ba061b2d9f
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 5f3632df-b7f0-45de-9783-9180bac68e6d
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: 5d335c67-83a0-4a4e-90f9-123c7feef693
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: 3590ece8-f69e-4221-ac18-20875f908e42
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_distrito = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database(
+				        "LAPTOP-NIUMH18V\SQLEXPRESS",
+				        "dengue_analytics"
+				    ),
+				
+				    Distrito = Origen{
+				        [Schema="dbo", Item="dim_distrito"]
+				    }[Data],
+				
+				    Tipos = Table.TransformColumnTypes(
+				        Distrito,
+				        {
+				            {"ubigeo", type text},
+				            {"departamento", type text},
+				            {"provincia", type text},
+				            {"distrito", type text}
+				        }
+				    ),
+				
+				    UbigeoNormalizado = Table.TransformColumns(
+				        Tipos,
+				        {
+				            {
+				                "ubigeo",
+				                each Text.PadStart(
+				                    Text.Trim(Text.From(_)),
+				                    6,
+				                    "0"
+				                ),
+				                type text
+				            }
+				        }
+				    )
+				in
+				    UbigeoNormalizado
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,36 @@
+AUDITORIA CARTOGRAFICA IGN
+============================================================
+Archivo: DISTRITOS.shp
+Registros: 1,891
+Columnas: ['OBJECTID_1', 'UBIGEO', 'CODDEP', 'DEPARTAMEN', 'CODPROV', 'PROVINCIA', 'CODDIST', 'DISTRITO', 'CAPITAL', 'FUENTE', 'geometry']
+Sistema de coordenadas: EPSG:4326
+Tipos de geometria: {'Polygon': 1883, 'MultiPolygon': 8}
+Geometrias nulas: 0
+Geometrias vacias: 0
+Geometrias invalidas: 0
+Limites geograficos: [-81.32823048999995, -18.35092773599996, -68.65227910299996, -0.03860596899994562]
+
+Columna UBIGEO identificada: UBIGEO
+UBIGEO diferentes: 1,891
+Registros sin UBIGEO: 0
+UBIGEO duplicados: 0
+
+REVISION DE ALTO TRUJILLO
+----------------------------------------
+UBIGEO 130112 encontrado: True
+ OBJECTID_1 UBIGEO CODDEP  DEPARTAMEN CODPROV PROVINCIA CODDIST      DISTRITO       CAPITAL FUENTE _ubigeo
+       1499 130112     13 LA LIBERTAD      01  TRUJILLO      12 ALTO TRUJILLO ALTO TRUJILLO   INEI  130112
+
+COMPARACION DE FUENTES
+==================================================
+IGN_NO_CLIMA: 0
+CLIMA_NO_IGN: 0
+MINSA_NO_IGN: 0
+MINSA_NO_CLIMA: 0
+
+RESUMEN FINAL
+==================================================
+Registros IGN: 1,891
+UBIGEO IGN: 1,891
+UBIGEO clima: 1,891
+UBIGEO MINSA: 662

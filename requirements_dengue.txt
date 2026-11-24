@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+SQLAlchemy
+mysql-connector-python
+python-dotenv
+fastapi
+uvicorn[standard]
+groq

@@ -1,0 +1,262 @@
+DIAGNOSTICO DETALLADO DE NULOS CLIMATICOS
+=================================================================
+
+ANIO: 2000
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2001
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2002
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2003
+Registros: 100,223
+Todas las variables climaticas nulas: 689
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 100,223
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2004
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2005
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2006
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2007
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2008
+Registros: 100,223
+Todas las variables climaticas nulas: 689
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 100,223
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2009
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2010
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2011
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2012
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2013
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2014
+Registros: 100,223
+Todas las variables climaticas nulas: 689
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 100,223
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2015
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2016
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2017
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2018
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2019
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2020
+Registros: 100,223
+Todas las variables climaticas nulas: 689
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 100,223
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2021
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2022
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2023
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2024
+Registros: 98,332
+Todas las variables climaticas nulas: 676
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 98,332
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0
+
+ANIO: 2025
+Registros: 100,223
+Todas las variables climaticas nulas: 689
+Nulos parciales: 0
+Mascaras identicas: True
+Departamento nulo: 100,223
+Distritos afectados: 13
+Distritos sin clima todo el anio: 13
+Distritos con afectacion parcial: 0

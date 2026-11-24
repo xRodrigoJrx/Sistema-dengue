@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 128.21611579491903
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 97.174771270635716,
+            "y": 1.4093331472388968
+          },
+          "nodeIndex": "fact_metricas_modelo",
+          "nodeLineageTag": "447d7fff-c4c2-4c0e-99c9-a6a44696ccef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 718.58381073232806,
+            "y": 708.353055799329
+          },
+          "nodeIndex": "vw_historico_dengue",
+          "nodeLineageTag": "11dcc950-1511-4539-b9d3-52a240586c66",
+          "size": {
+            "height": 290.13466796932778,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 560.03322849764936,
+            "y": 2.81866629447779
+          },
+          "nodeIndex": "vw_ranking_distritos_pronostico",
+          "nodeLineageTag": "dc4650f2-7cd4-42ab-aae3-fed6c4a2b724",
+          "size": {
+            "height": 294.01378008009374,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 170.03227387259577,
+            "y": 754.51625559086415
+          },
+          "nodeIndex": "vw_resumen_nacional_pronostico",
+          "nodeLineageTag": "28380efa-b041-49d6-875b-e5befb48bcbd",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 571.4773886550721,
+            "y": 379.38248257660797
+          },
+          "nodeIndex": "dim_distrito",
+          "nodeLineageTag": "5630d3cc-d868-4211-8944-f1e517de374e",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 184.41527088925292,
+            "y": 442.12888498346217
+          },
+          "nodeIndex": "DimHorizonte",
+          "nodeLineageTag": "93cf8c82-4e3f-41b8-a3c2-e7d661fa01ed",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 931.94480532486921,
+            "y": 322.48041330745781
+          },
+          "nodeIndex": "DimFecha",
+          "nodeLineageTag": "28ca595a-cadd-4160-9b45-6d91a4fe553d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 79.55318203769987,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

@@ -1,0 +1,30 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["vw_historico_dengue","vw_ranking_distritos_pronostico","vw_resumen_nacional_pronostico","fact_metricas_modelo","dim_distrito"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table vw_historico_dengue
+ref table DateTableTemplate_bd92d62b-f771-46e1-9e75-32329784f839
+ref table LocalDateTable_91e91dcc-6dcf-44db-a17a-366d9c41ab75
+ref table vw_ranking_distritos_pronostico
+ref table LocalDateTable_a8bd292c-cd6f-43f0-867f-6d5c80334b3d
+ref table vw_resumen_nacional_pronostico
+ref table LocalDateTable_8218dd17-d765-4358-97d1-591d758403d2
+ref table LocalDateTable_f91f9edb-22f0-4017-b374-8de0d4fd16c7
+ref table fact_metricas_modelo
+ref table dim_distrito
+ref table DimHorizonte
+ref table DimFecha
+
+ref cultureInfo es-ES
+

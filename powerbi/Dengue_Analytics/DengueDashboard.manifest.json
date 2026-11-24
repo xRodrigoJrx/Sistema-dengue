@@ -1,0 +1,51 @@
+{
+    "pages":  [
+                  {
+                      "created":  false,
+                      "id":  "922c39c15ff3ae7d3b74",
+                      "visuals":  [
+                                      "e0be72b8aad14b9a989f",
+                                      "816dbfc87ab44749b54b",
+                                      "c972c794043f4f58a8a4",
+                                      "5e7f87436b904485aabb"
+                                  ]
+                  },
+                  {
+                      "created":  false,
+                      "id":  "4dccc7db393bc321ea58",
+                      "visuals":  [
+                                      "d72a0ce6f0894e52abf9",
+                                      "5383934110b84306ab8a",
+                                      "3815a3fbcbec4506baaa",
+                                      "b4a4d5892f47428fb2f4",
+                                      "4c3fc5e9965345f18556"
+                                  ]
+                  },
+                  {
+                      "created":  true,
+                      "id":  "380cb8ee85c642469a7d",
+                      "visuals":  [
+                                      "3aa20324136945d4af39",
+                                      "17f4f3ca238c42018706",
+                                      "e14d6e5d90aa4ae0b64e",
+                                      "d731ee5c3a5a4167b821",
+                                      "3de748b6f81e45c9b14e",
+                                      "9ffd88c25db84f5e9390"
+                                  ]
+                  },
+                  {
+                      "created":  true,
+                      "id":  "bec4b0eca9204b679679",
+                      "visuals":  [
+                                      "fd502cf8d4c04be68324",
+                                      "2138531c0e264ac88375",
+                                      "b95c71aa480a4460bb68",
+                                      "d7804b6bcd37466d9944",
+                                      "0adcc94fca474be7979d",
+                                      "b878483233464d8da9f4"
+                                  ]
+                  }
+              ],
+    "projectRoot":  "C:\\Users\\xxter\\Documents\\Data_Dengue\\Sistema\\powerbi\\Dengue_Analytics",
+    "generatedAt":  "2026-11-22 13:13:21"
+}

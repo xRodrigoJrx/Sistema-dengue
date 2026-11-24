@@ -1,0 +1,198 @@
+﻿categoria,archivo,hoja,columna,tipo_dato,nulos,vacios,valores_diferentes
+CLIMA,Lambayeque.xlsx,departamento,departamento,str,0,0,1
+CLIMA,Lambayeque.xlsx,departamento,tmean,float64,7,0,35
+CLIMA,Lambayeque.xlsx,departamento,tmax,float64,7,0,45
+CLIMA,Lambayeque.xlsx,departamento,tmin,float64,7,0,44
+CLIMA,Lambayeque.xlsx,departamento,humr,float64,7,0,67
+CLIMA,Lambayeque.xlsx,departamento,ptot,float64,7,0,36
+CLIMA,Lambayeque.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,Lambayeque.xlsx,departamento,ano,int64,0,0,2
+CLIMA,Lambayeque.xlsx,departamento,semana,int64,0,0,52
+CLIMA,Lambayeque.xlsx,provincia,departamento,str,0,0,26
+CLIMA,Lambayeque.xlsx,provincia,provincia,str,0,0,200
+CLIMA,Lambayeque.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,Lambayeque.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,Lambayeque.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,Lambayeque.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,Lambayeque.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,Lambayeque.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,Lambayeque.xlsx,provincia,ano,int64,0,0,2
+CLIMA,Lambayeque.xlsx,provincia,semana,int64,0,0,52
+CLIMA,Lambayeque.xlsx,distrito,departamento,str,0,0,26
+CLIMA,Lambayeque.xlsx,distrito,provincia,str,0,0,200
+CLIMA,Lambayeque.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,Lambayeque.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,Lambayeque.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,Lambayeque.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,Lambayeque.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,Lambayeque.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,Lambayeque.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,Lambayeque.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,Lambayeque.xlsx,distrito,ano,int64,0,0,2
+CLIMA,Lambayeque.xlsx,distrito,semana,int64,0,0,52
+CLIMA,Loreto.xlsx,departamento,departamento,str,0,0,1
+CLIMA,Loreto.xlsx,departamento,tmean,float64,7,0,33
+CLIMA,Loreto.xlsx,departamento,tmax,float64,7,0,42
+CLIMA,Loreto.xlsx,departamento,tmin,float64,7,0,29
+CLIMA,Loreto.xlsx,departamento,humr,float64,7,0,60
+CLIMA,Loreto.xlsx,departamento,ptot,float64,7,0,92
+CLIMA,Loreto.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,Loreto.xlsx,departamento,ano,int64,0,0,2
+CLIMA,Loreto.xlsx,departamento,semana,int64,0,0,52
+CLIMA,Loreto.xlsx,provincia,departamento,str,0,0,26
+CLIMA,Loreto.xlsx,provincia,provincia,str,0,0,200
+CLIMA,Loreto.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,Loreto.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,Loreto.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,Loreto.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,Loreto.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,Loreto.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,Loreto.xlsx,provincia,ano,int64,0,0,2
+CLIMA,Loreto.xlsx,provincia,semana,int64,0,0,52
+CLIMA,Loreto.xlsx,distrito,departamento,str,0,0,26
+CLIMA,Loreto.xlsx,distrito,provincia,str,0,0,200
+CLIMA,Loreto.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,Loreto.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,Loreto.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,Loreto.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,Loreto.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,Loreto.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,Loreto.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,Loreto.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,Loreto.xlsx,distrito,ano,int64,0,0,2
+CLIMA,Loreto.xlsx,distrito,semana,int64,0,0,52
+CLIMA,Piura.xlsx,departamento,departamento,str,0,0,1
+CLIMA,Piura.xlsx,departamento,tmean,float64,7,0,42
+CLIMA,Piura.xlsx,departamento,tmax,float64,7,0,42
+CLIMA,Piura.xlsx,departamento,tmin,float64,7,0,42
+CLIMA,Piura.xlsx,departamento,humr,float64,7,0,67
+CLIMA,Piura.xlsx,departamento,ptot,float64,7,0,39
+CLIMA,Piura.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,Piura.xlsx,departamento,ano,int64,0,0,2
+CLIMA,Piura.xlsx,departamento,semana,int64,0,0,52
+CLIMA,Piura.xlsx,provincia,departamento,str,0,0,26
+CLIMA,Piura.xlsx,provincia,provincia,str,0,0,200
+CLIMA,Piura.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,Piura.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,Piura.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,Piura.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,Piura.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,Piura.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,Piura.xlsx,provincia,ano,int64,0,0,2
+CLIMA,Piura.xlsx,provincia,semana,int64,0,0,52
+CLIMA,Piura.xlsx,distrito,departamento,str,0,0,26
+CLIMA,Piura.xlsx,distrito,provincia,str,0,0,200
+CLIMA,Piura.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,Piura.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,Piura.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,Piura.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,Piura.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,Piura.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,Piura.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,Piura.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,Piura.xlsx,distrito,ano,int64,0,0,2
+CLIMA,Piura.xlsx,distrito,semana,int64,0,0,52
+CLIMA,San Martin.xlsx,departamento,departamento,str,0,0,1
+CLIMA,San Martin.xlsx,departamento,tmean,float64,7,0,31
+CLIMA,San Martin.xlsx,departamento,tmax,float64,7,0,37
+CLIMA,San Martin.xlsx,departamento,tmin,float64,7,0,33
+CLIMA,San Martin.xlsx,departamento,humr,float64,7,0,69
+CLIMA,San Martin.xlsx,departamento,ptot,float64,7,0,85
+CLIMA,San Martin.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,San Martin.xlsx,departamento,ano,int64,0,0,2
+CLIMA,San Martin.xlsx,departamento,semana,int64,0,0,52
+CLIMA,San Martin.xlsx,provincia,departamento,str,0,0,26
+CLIMA,San Martin.xlsx,provincia,provincia,str,0,0,200
+CLIMA,San Martin.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,San Martin.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,San Martin.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,San Martin.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,San Martin.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,San Martin.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,San Martin.xlsx,provincia,ano,int64,0,0,2
+CLIMA,San Martin.xlsx,provincia,semana,int64,0,0,52
+CLIMA,San Martin.xlsx,distrito,departamento,str,0,0,26
+CLIMA,San Martin.xlsx,distrito,provincia,str,0,0,200
+CLIMA,San Martin.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,San Martin.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,San Martin.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,San Martin.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,San Martin.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,San Martin.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,San Martin.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,San Martin.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,San Martin.xlsx,distrito,ano,int64,0,0,2
+CLIMA,San Martin.xlsx,distrito,semana,int64,0,0,52
+CLIMA,Tumbes.xlsx,departamento,departamento,str,0,0,1
+CLIMA,Tumbes.xlsx,departamento,tmean,float64,7,0,41
+CLIMA,Tumbes.xlsx,departamento,tmax,float64,7,0,40
+CLIMA,Tumbes.xlsx,departamento,tmin,float64,7,0,36
+CLIMA,Tumbes.xlsx,departamento,humr,float64,7,0,79
+CLIMA,Tumbes.xlsx,departamento,ptot,float64,7,0,34
+CLIMA,Tumbes.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,Tumbes.xlsx,departamento,ano,int64,0,0,2
+CLIMA,Tumbes.xlsx,departamento,semana,int64,0,0,52
+CLIMA,Tumbes.xlsx,provincia,departamento,str,0,0,26
+CLIMA,Tumbes.xlsx,provincia,provincia,str,0,0,200
+CLIMA,Tumbes.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,Tumbes.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,Tumbes.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,Tumbes.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,Tumbes.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,Tumbes.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,Tumbes.xlsx,provincia,ano,int64,0,0,2
+CLIMA,Tumbes.xlsx,provincia,semana,int64,0,0,52
+CLIMA,Tumbes.xlsx,distrito,departamento,str,0,0,26
+CLIMA,Tumbes.xlsx,distrito,provincia,str,0,0,200
+CLIMA,Tumbes.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,Tumbes.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,Tumbes.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,Tumbes.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,Tumbes.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,Tumbes.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,Tumbes.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,Tumbes.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,Tumbes.xlsx,distrito,ano,int64,0,0,2
+CLIMA,Tumbes.xlsx,distrito,semana,int64,0,0,52
+CLIMA,Ucayali.xlsx,departamento,departamento,str,0,0,1
+CLIMA,Ucayali.xlsx,departamento,tmean,float64,7,0,39
+CLIMA,Ucayali.xlsx,departamento,tmax,float64,7,0,45
+CLIMA,Ucayali.xlsx,departamento,tmin,float64,7,0,39
+CLIMA,Ucayali.xlsx,departamento,humr,float64,7,0,74
+CLIMA,Ucayali.xlsx,departamento,ptot,float64,7,0,92
+CLIMA,Ucayali.xlsx,departamento,n_dias,float64,7,0,2
+CLIMA,Ucayali.xlsx,departamento,ano,int64,0,0,2
+CLIMA,Ucayali.xlsx,departamento,semana,int64,0,0,52
+CLIMA,Ucayali.xlsx,provincia,departamento,str,0,0,26
+CLIMA,Ucayali.xlsx,provincia,provincia,str,0,0,200
+CLIMA,Ucayali.xlsx,provincia,tmean,float64,1400,0,283
+CLIMA,Ucayali.xlsx,provincia,tmax,float64,1400,0,281
+CLIMA,Ucayali.xlsx,provincia,tmin,float64,1400,0,304
+CLIMA,Ucayali.xlsx,provincia,humr,float64,1400,0,737
+CLIMA,Ucayali.xlsx,provincia,ptot,float64,1400,0,1240
+CLIMA,Ucayali.xlsx,provincia,n_dias,float64,1788,0,2
+CLIMA,Ucayali.xlsx,provincia,ano,int64,0,0,2
+CLIMA,Ucayali.xlsx,provincia,semana,int64,0,0,52
+CLIMA,Ucayali.xlsx,distrito,departamento,str,0,0,26
+CLIMA,Ucayali.xlsx,distrito,provincia,str,0,0,200
+CLIMA,Ucayali.xlsx,distrito,distrito,str,0,0,1733
+CLIMA,Ucayali.xlsx,distrito,ubigeo,int64,0,0,1891
+CLIMA,Ucayali.xlsx,distrito,tmean,float64,14438,0,318
+CLIMA,Ucayali.xlsx,distrito,tmax,float64,14438,0,321
+CLIMA,Ucayali.xlsx,distrito,tmin,float64,14438,0,346
+CLIMA,Ucayali.xlsx,distrito,humr,float64,14438,0,865
+CLIMA,Ucayali.xlsx,distrito,ptot,float64,13538,0,2029
+CLIMA,Ucayali.xlsx,distrito,n_dias,float64,13538,0,2
+CLIMA,Ucayali.xlsx,distrito,ano,int64,0,0,2
+CLIMA,Ucayali.xlsx,distrito,semana,int64,0,0,52
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,cuadro nº 01,object,3,0,2141
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 1,str,29,0,1829
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 2,object,28,0,1961
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 3,object,29,0,1963
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 4,object,29,0,1947
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 5,object,29,0,1971
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 6,object,29,0,1950
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 7,object,29,0,1984
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 8,object,29,0,1970
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 9,float64,29,0,1952
+POBLACION,Limpia.xlsx,POB. PROYECTADA 2018-2026,unnamed: 10,float64,29,0,1962

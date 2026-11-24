@@ -1,0 +1,496 @@
+AUDITORIA DE FUENTES SECUNDARIAS
+============================================================
+
+FUENTE: CLIMA
+=============================================
+
+ARCHIVO: Lambayeque.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=35
+  tmax: nulos=7, vacios=0, unicos=45
+  tmin: nulos=7, vacios=0, unicos=44
+  humr: nulos=7, vacios=0, unicos=67
+  ptot: nulos=7, vacios=0, unicos=36
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+  LAMBAYEQUE   21.7  27.2  18.0  73.2  11.4     7.0 2018       1
+  LAMBAYEQUE   21.4  26.1  18.4  78.3  13.0     7.0 2018       2
+  LAMBAYEQUE   21.9  26.7  18.7  72.8   7.2     7.0 2018       3
+  LAMBAYEQUE   22.9  28.4  19.0  70.0   1.1     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+ARCHIVO: Loreto.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=33
+  tmax: nulos=7, vacios=0, unicos=42
+  tmin: nulos=7, vacios=0, unicos=29
+  humr: nulos=7, vacios=0, unicos=60
+  ptot: nulos=7, vacios=0, unicos=92
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+      LORETO   25.1  29.1  22.6  88.7  80.3     7.0 2018       1
+      LORETO   24.6  28.5  22.1  89.4  75.5     7.0 2018       2
+      LORETO   24.2  27.9  22.1  91.6  85.9     7.0 2018       3
+      LORETO   24.5  28.4  22.3  89.8  42.1     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+ARCHIVO: Piura.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=42
+  tmax: nulos=7, vacios=0, unicos=42
+  tmin: nulos=7, vacios=0, unicos=42
+  humr: nulos=7, vacios=0, unicos=67
+  ptot: nulos=7, vacios=0, unicos=39
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+       PIURA   21.5  26.7  18.1  74.3   6.9     7.0 2018       1
+       PIURA   21.4  26.3  18.3  76.7  12.4     7.0 2018       2
+       PIURA   21.7  26.8  18.2  71.1   8.5     7.0 2018       3
+       PIURA   22.7  28.1  18.8  69.2   1.2     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+ARCHIVO: San Martin.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=31
+  tmax: nulos=7, vacios=0, unicos=37
+  tmin: nulos=7, vacios=0, unicos=33
+  humr: nulos=7, vacios=0, unicos=69
+  ptot: nulos=7, vacios=0, unicos=85
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+  SAN MARTIN   19.5  23.3  16.8  89.0  56.3     7.0 2018       1
+  SAN MARTIN   19.2  23.0  16.3  87.7  71.7     7.0 2018       2
+  SAN MARTIN   18.8  22.6  16.2  90.6  37.5     7.0 2018       3
+  SAN MARTIN   19.4  24.0  16.0  85.8  12.8     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+ARCHIVO: Tumbes.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=41
+  tmax: nulos=7, vacios=0, unicos=40
+  tmin: nulos=7, vacios=0, unicos=36
+  humr: nulos=7, vacios=0, unicos=79
+  ptot: nulos=7, vacios=0, unicos=34
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+      TUMBES   24.5  29.5  21.4  71.7   1.1     7.0 2018       1
+      TUMBES   24.4  28.7  21.8  73.5   3.2     7.0 2018       2
+      TUMBES   23.9  28.7  21.0  74.0  20.4     7.0 2018       3
+      TUMBES   24.5  28.9  21.8  74.8   0.8     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+ARCHIVO: Ucayali.xlsx
+Tamaño: 12.12 MB
+Hojas encontradas: ['departamento', 'provincia', 'distrito']
+
+HOJA: departamento
+Registros: 104
+Columnas: 9
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=1
+  tmean: nulos=7, vacios=0, unicos=39
+  tmax: nulos=7, vacios=0, unicos=45
+  tmin: nulos=7, vacios=0, unicos=39
+  humr: nulos=7, vacios=0, unicos=74
+  ptot: nulos=7, vacios=0, unicos=92
+  n_dias: nulos=7, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+     UCAYALI   24.4  28.4  21.8  88.0  59.1     7.0 2018       1
+     UCAYALI   23.8  27.6  21.3  89.0  73.4     7.0 2018       2
+     UCAYALI   23.8  27.7  21.4  88.5  55.1     7.0 2018       3
+     UCAYALI   24.8  29.4  21.6  84.2  18.0     7.0 2018       4
+
+HOJA: provincia
+Registros: 20,800
+Columnas: 10
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  tmean: nulos=1,400, vacios=0, unicos=283
+  tmax: nulos=1,400, vacios=0, unicos=281
+  tmin: nulos=1,400, vacios=0, unicos=304
+  humr: nulos=1,400, vacios=0, unicos=737
+  ptot: nulos=1,400, vacios=0, unicos=1,240
+  n_dias: nulos=1,788, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento    provincia  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS        BAGUA   20.8  25.1  17.9  87.6 126.7     7.0 2018       1
+    AMAZONAS      BONGARA   15.9  19.7  13.2  91.9 111.1     7.0 2018       1
+    AMAZONAS  CHACHAPOYAS   13.0  17.1  10.5  85.6  30.2     7.0 2018       1
+    AMAZONAS CONDORCANQUI   22.2  26.9  19.3  88.8 132.9     7.0 2018       1
+
+HOJA: distrito
+Registros: 201,136
+Columnas: 12
+Duplicados exactos: 0
+COLUMNAS: ['departamento', 'provincia', 'distrito', 'ubigeo', 'tmean', 'tmax', 'tmin', 'humr', 'ptot', 'n_dias', 'ano', 'semana']
+  departamento: nulos=0, vacios=0, unicos=26
+  provincia: nulos=0, vacios=0, unicos=200
+  distrito: nulos=0, vacios=0, unicos=1,733
+  ubigeo: nulos=0, vacios=0, unicos=1,891
+  tmean: nulos=14,438, vacios=0, unicos=318
+  tmax: nulos=14,438, vacios=0, unicos=321
+  tmin: nulos=14,438, vacios=0, unicos=346
+  humr: nulos=14,438, vacios=0, unicos=865
+  ptot: nulos=13,538, vacios=0, unicos=2,029
+  n_dias: nulos=13,538, vacios=0, unicos=2
+  ano: nulos=0, vacios=0, unicos=2
+  semana: nulos=0, vacios=0, unicos=52
+
+MUESTRA DE REGISTROS:
+departamento provincia distrito  ubigeo  tmean  tmax  tmin  humr  ptot  n_dias  ano  semana
+    AMAZONAS     BAGUA ARAMANGO   10202   19.2  23.4  16.4  86.1 101.0     7.0 2018       1
+    AMAZONAS     BAGUA    BAGUA   10201   22.8  26.9  19.5  80.0  30.8     7.0 2018       1
+    AMAZONAS     BAGUA COPALLIN   10203   20.0  23.7  16.7  82.4  46.0     7.0 2018       1
+    AMAZONAS     BAGUA EL PARCO   10204   22.9  27.0  19.3  79.8  29.5     7.0 2018       1
+
+FUENTE: POBLACION
+=============================================
+
+ARCHIVO: Limpia.xlsx
+Tamaño: 0.2 MB
+Hojas encontradas: ['POB. PROYECTADA 2018-2026']
+
+HOJA: POB. PROYECTADA 2018-2026
+Registros: 2,144
+Columnas: 11
+Duplicados exactos: 1
+COLUMNAS: ['cuadro nº 01', 'unnamed: 1', 'unnamed: 2', 'unnamed: 3', 'unnamed: 4', 'unnamed: 5', 'unnamed: 6', 'unnamed: 7', 'unnamed: 8', 'unnamed: 9', 'unnamed: 10']
+  cuadro nº 01: nulos=3, vacios=0, unicos=2,141
+  unnamed: 1: nulos=29, vacios=0, unicos=1,829
+  unnamed: 2: nulos=28, vacios=0, unicos=1,961
+  unnamed: 3: nulos=29, vacios=0, unicos=1,963
+  unnamed: 4: nulos=29, vacios=0, unicos=1,947
+  unnamed: 5: nulos=29, vacios=0, unicos=1,971
+  unnamed: 6: nulos=29, vacios=0, unicos=1,950
+  unnamed: 7: nulos=29, vacios=0, unicos=1,984
+  unnamed: 8: nulos=29, vacios=0, unicos=1,970
+  unnamed: 9: nulos=29, vacios=0, unicos=1,952
+  unnamed: 10: nulos=29, vacios=0, unicos=1,962
+
+MUESTRA DE REGISTROS:
+                                                                                                    cuadro nº 01                         unnamed: 1               unnamed: 2 unnamed: 3 unnamed: 4 unnamed: 5 unnamed: 6 unnamed: 7 unnamed: 8  unnamed: 9  unnamed: 10
+PERÚ: POBLACIÓN TOTAL PROYECTADA AL 30 DE JUNIO DE CADA AÑO, SEGÚN DEPARTAMENTO, PROVINCIA Y DISTRITO, 2018-2026                                NaN                      NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN          NaN
+                                                                           (Información de carácter referencial)                                NaN                      NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN          NaN
+                                                                                                          UBIGEO Departamento, provincia y distrito Población proyectada  1/        NaN        NaN        NaN        NaN        NaN        NaN         NaN          NaN
+                                                                                                             NaN                                NaN                     2018       2019       2020       2021       2022       2023       2024      2025.0       2026.0
+
+
+FUENTE: GEOGRAFIA
+=============================================
+
+ARCHIVO: DISTRITO.gpkg
+Tablas internas: ['gpkg_spatial_ref_sys', 'gpkg_contents', 'gpkg_ogr_contents', 'gpkg_geometry_columns', 'gpkg_tile_matrix_set', 'gpkg_tile_matrix', 'sqlite_sequence', 'gpkg_extensions', 'gpkg_metadata', 'gpkg_metadata_reference', 'DISTRITO', 'rtree_DISTRITO_geom', 'rtree_DISTRITO_geom_rowid', 'rtree_DISTRITO_geom_node', 'rtree_DISTRITO_geom_parent']
+
+CAPA: DISTRITO
+Tipo: features
+Registros: 1,890
+Columnas: ['OBJECTID', 'geom', 'ccdd', 'ccpp', 'ccdi', 'ubigeo', 'nombdist', 'fuente', 'nombdep', 'nombprov']
+
+GEOMETRIAS:
+table_name column_name geometry_type_name  srs_id  z  m
+  DISTRITO        geom       MULTIPOLYGON    4326  0  0

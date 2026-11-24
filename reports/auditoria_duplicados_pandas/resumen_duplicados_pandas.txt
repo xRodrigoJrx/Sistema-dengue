@@ -1,0 +1,26 @@
+
+AUDITORIA DE DUPLICADOS - PANDAS + SQLITE
+==================================================
+
+Registros procesados: 1,065,274
+Registros contabilizados: 1,065,274
+
+Filas unicas por hash: 915,841
+Grupos con coincidencias: 95,078
+
+Registros dentro de grupos repetidos: 244,511
+Repeticiones adicionales: 149,433
+
+Frecuencia maxima de una fila: 27
+
+Resultado anterior:
+149,433 repeticiones adicionales
+
+Diferencia respecto al resultado anterior:
+0
+
+IMPORTANTE:
+Las coincidencias se determinan mediante huellas
+de las 15 columnas originales.
+
+No se han eliminado registros.

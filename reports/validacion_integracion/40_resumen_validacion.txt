@@ -1,0 +1,160 @@
+VALIDACION DE INTEGRACION
+============================================================
+
+ARCHIVO: Lambayeque.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+ARCHIVO: Loreto.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: False
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+ARCHIVO: Piura.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: False
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+ARCHIVO: San Martin.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: False
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+ARCHIVO: Tumbes.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: False
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+ARCHIVO: Ucayali.xlsx
+
+HOJA: DEPARTAMENTO
+Registros: 104
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: False
+Nulos climaticos: {'tmean': 7, 'tmax': 7, 'tmin': 7, 'humr': 7, 'ptot': 7, 'n_dias': 7}
+
+HOJA: PROVINCIA
+Registros: 20,800
+Grupos con claves repetidas: 0
+Filas en grupos repetidos: 0
+Contenido identico al primer archivo: True
+Nulos climaticos: {'tmean': 1400, 'tmax': 1400, 'tmin': 1400, 'humr': 1400, 'ptot': 1400, 'n_dias': 1788}
+
+HOJA: DISTRITO
+Registros: 201,136
+Grupos con claves repetidas: 4,472
+Filas en grupos repetidos: 8,944
+Contenido identico al primer archivo: True
+UBIGEO diferentes: 1891
+Nulos climaticos: {'tmean': 14438, 'tmax': 14438, 'tmin': 14438, 'humr': 14438, 'ptot': 13538, 'n_dias': 13538}
+
+CAPA GEOGRAFICA: DISTRITO
+Registros geograficos: 1,890
+UBIGEO diferentes: 1,890
+
+CLIMA_NO_GEOGRAFIA: 1
+
+GEOGRAFIA_NO_CLIMA: 0
+
+MINSA_NO_CLIMA: 0
+
+MINSA_NO_GEOGRAFIA: 1
+
+Vista de poblacion generada.

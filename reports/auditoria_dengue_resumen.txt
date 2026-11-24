@@ -1,0 +1,38 @@
+AUDITORIA EPIDEMIOLOGICA MINSA
+==================================================
+Archivo: data1.csv
+Registros: 1,065,274
+Codificacion: utf-8-sig
+Años: [np.int64(2000), np.int64(2001), np.int64(2002), np.int64(2003), np.int64(2004), np.int64(2005), np.int64(2006), np.int64(2007), np.int64(2008), np.int64(2009), np.int64(2010), np.int64(2011), np.int64(2012), np.int64(2013), np.int64(2014), np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025)]
+Departamentos: 23
+UBIGEO diferentes: 662
+Filas UBIGEO invalido: 0
+
+DEPARTAMENTOS:
+['AMAZONAS', 'ANCASH', 'APURIMAC', 'AREQUIPA', 'AYACUCHO', 'CAJAMARCA', 'CALLAO', 'CUSCO', 'HUANUCO', 'ICA', 'JUNIN', 'LA LIBERTAD', 'LAMBAYEQUE', 'LIMA', 'LORETO', 'MADRE DE DIOS', 'MOQUEGUA', 'PASCO', 'PIURA', 'PUNO', 'SAN MARTIN', 'TUMBES', 'UCAYALI']
+
+VALORES DE TIPO_DX:
+[('C', 955112), ('P', 110162)]
+
+VALORES DE DIAGNOSTIC:
+[('A97.0', 944670), ('A97.1', 116407), ('A97.2', 4197)]
+
+VALORES DE ENFERMEDAD:
+[('DENGUE SIN SIGNOS DE ALARMA', 944670), ('DENGUE CON SIGNOS DE ALARMA', 116407), ('DENGUE GRAVE', 4197)]
+
+VALORES NULOS:
+localcod        149652.0
+localidad       123635.0
+diresa              23.0
+diagnostic           0.0
+distrito             0.0
+departamento         0.0
+ano                  0.0
+enfermedad           0.0
+edad                 0.0
+provincia            0.0
+semana               0.0
+sexo                 0.0
+tipo_dx              0.0
+tipo_edad            0.0
+ubigeo               0.0

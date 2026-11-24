@@ -1,0 +1,252 @@
+AUDITORIA CLIMATICA - DENGUE INTELLIGENCE PERU
+=================================================================
+Archivos encontrados: 26
+Años esperados: 26
+Años faltantes: []
+
+RESULTADOS POR AÑO
+=================================================================
+
+AÑO: 2000
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2001
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2002
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2003
+Registros: 100,223 / 100,223
+Distritos: 1891
+Semanas: 53 / 53
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 105735
+Estado: REVISAR
+
+AÑO: 2004
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2005
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2006
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2007
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2008
+Registros: 100,223 / 100,223
+Distritos: 1891
+Semanas: 53 / 53
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 105735
+Estado: REVISAR
+
+AÑO: 2009
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2010
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2011
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2012
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2013
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2014
+Registros: 100,223 / 100,223
+Distritos: 1891
+Semanas: 53 / 53
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 105735
+Estado: REVISAR
+
+AÑO: 2015
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2016
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2017
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2018
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2019
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2020
+Registros: 100,223 / 100,223
+Distritos: 1891
+Semanas: 53 / 53
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 105735
+Estado: REVISAR
+
+AÑO: 2021
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2022
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2023
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2024
+Registros: 98,332 / 98,332
+Distritos: 1891
+Semanas: 52 / 52
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 103740
+Estado: REVISAR
+
+AÑO: 2025
+Registros: 100,223 / 100,223
+Distritos: 1891
+Semanas: 53 / 53
+Semanas incompletas: 0
+Claves duplicadas: 0
+Nulos críticos: 105735
+Estado: REVISAR
+
+ARCHIVOS GENERADOS
+50_resumen_clima_por_anio.csv
+51_nulos_climaticos.csv
+52_anomalias_climaticas.csv
+53_duplicados_climaticos.csv
+54_cobertura_semanal.csv
+
+Los CSV originales no fueron modificados.
+La validación de calendario comprueba la consistencia con el calendario usado por el extractor. La equivalencia con las semanas oficiales CDC-MINSA debe comprobarse antes de integrar las fuentes.

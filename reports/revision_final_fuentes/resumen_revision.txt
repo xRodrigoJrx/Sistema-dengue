@@ -1,0 +1,35 @@
+REVISION DE DUPLICADOS CLIMATICOS
+=======================================================
+Archivo: Lambayeque.xlsx
+Registros: 201,136
+Grupos repetidos: 4,472
+Filas repetidas: 8,944
+Distribucion de frecuencia: {2: 4472}
+Grupos con valores climaticos iguales: 4,472
+Grupos con valores climaticos diferentes: 0
+Anios: [2018, 2026]
+Semanas: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+
+
+HOJAS DEPARTAMENTO
+=======================================================
+Lambayeque.xlsx: 104 registros | ['LAMBAYEQUE']
+Loreto.xlsx: 104 registros | ['LORETO']
+Piura.xlsx: 104 registros | ['PIURA']
+San Martin.xlsx: 104 registros | ['SAN MARTIN']
+Tumbes.xlsx: 104 registros | ['TUMBES']
+Ucayali.xlsx: 104 registros | ['UCAYALI']
+
+
+MINSA - UBIGEO 130112
+=======================================================
+Total de registros: 1,165
+Registros por ano: {'2024': 1164, '2025': 1}
+Distritos registrados: {'ALTO TRUJILLO': 1165}
+Provincias registradas: {'TRUJILLO': 1165}
+
+
+ESTRUCTURA DE POBLACION
+=======================================================
+Archivo: Limpia.xlsx
+Hojas: ['POB. PROYECTADA 2018-2026']

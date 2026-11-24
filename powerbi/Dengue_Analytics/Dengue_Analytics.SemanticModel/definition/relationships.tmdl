@@ -1,0 +1,57 @@
+relationship f77073aa-29e7-454f-9776-efa103ee7de0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_historico_dengue.fecha_fin
+	toColumn: LocalDateTable_91e91dcc-6dcf-44db-a17a-366d9c41ab75.Date
+
+relationship adfe2c2d-5d8c-4cfc-9627-82cd7e96087c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_ranking_distritos_pronostico.fecha_generacion
+	toColumn: LocalDateTable_a8bd292c-cd6f-43f0-867f-6d5c80334b3d.Date
+
+relationship 8943bd57-3ec0-484d-878b-67cd8d724a16
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_resumen_nacional_pronostico.fecha_generacion
+	toColumn: LocalDateTable_8218dd17-d765-4358-97d1-591d758403d2.Date
+
+relationship 2b863a84-cf21-464c-9ee7-9cc23ece5821
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_resumen_nacional_pronostico.fecha_objetivo
+	toColumn: LocalDateTable_f91f9edb-22f0-4017-b374-8de0d4fd16c7.Date
+
+relationship AutoDetected_c4f810c1-e242-4f3a-b439-d52bdaac9065
+	fromColumn: vw_historico_dengue.ubigeo
+	toColumn: dim_distrito.ubigeo
+
+relationship AutoDetected_dff58423-2cec-4148-9d47-f695ebbd0a7f
+	fromColumn: vw_ranking_distritos_pronostico.ubigeo
+	toColumn: dim_distrito.ubigeo
+
+relationship da876c08-c812-4af9-7d11-da9f12bf75dd
+	fromColumn: vw_ranking_distritos_pronostico.horizonte_semanas
+	toColumn: DimHorizonte.horizonte
+
+relationship ee42471e-81a8-f2fa-1ad6-681d440de35d
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: DimHorizonte.horizonte
+	toColumn: vw_resumen_nacional_pronostico.horizonte_semanas
+
+relationship 7dcebfc2-7dcb-12c2-221a-554a9f1ad637
+	fromColumn: fact_metricas_modelo.horizonte
+	toColumn: DimHorizonte.horizonte
+
+relationship 8d1e3db2-1091-a888-c426-0f539a93f958
+	fromColumn: vw_historico_dengue.fecha_inicio
+	toColumn: DimFecha.Date
+
+relationship 8915105f-4106-c5cc-0e8b-ed275a8e9e1c
+	fromColumn: vw_ranking_distritos_pronostico.fecha_objetivo
+	toColumn: DimFecha.Date
+
+relationship 16618703-7e71-64ac-03b8-a8765dd96fb1
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: DimFecha.Date
+	toColumn: vw_resumen_nacional_pronostico.fecha_objetivo
+

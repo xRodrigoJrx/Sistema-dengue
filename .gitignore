@@ -1,0 +1,15 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+*.joblib
+data/raw/
+data/processed/
+models/
+reports/
+powerbi/*.pbix
+# Archivos pesados excluidos de GitHub
+data/raw/epidemiologia/data1.csv
+powerbi/Dengue_Analytics/Dengue_Analytics.SemanticModel/.pbi/cache.abf
+reports/auditoria_concentracion/concentracion.sqlite
+reports/auditoria_duplicados_pandas/duplicados.sqlite

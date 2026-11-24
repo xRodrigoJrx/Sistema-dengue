@@ -1,0 +1,127 @@
+table vw_ranking_distritos_pronostico
+	lineageTag: dc4650f2-7cd4-42ab-aae3-fed6c4a2b724
+
+	measure 'Pronostico Distrital' =
+			
+			SUM('vw_ranking_distritos_pronostico'[prediccion_final])
+		lineageTag: 75861a96-d0db-4b71-b5a2-05d7cd85e633
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Distritos Evaluados' =
+			
+			DISTINCTCOUNT('vw_ranking_distritos_pronostico'[ubigeo])
+		formatString: 0
+		lineageTag: 9ce5421e-c33f-43d3-bb4e-b579ece46b11
+
+	measure 'Pronostico Maximo Distrital' =
+			
+			MAX('vw_ranking_distritos_pronostico'[prediccion_final])
+		lineageTag: b2ad7845-b7f8-4697-b3eb-6e120a24fe97
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pronostico Promedio Distrital' =
+			
+			AVERAGE('vw_ranking_distritos_pronostico'[prediccion_final])
+		lineageTag: fd0a362f-1336-439b-b4e3-66658c5ba55d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha_generacion
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 78b1f4cd-6a8d-476b-9d76-d4e66e4ed48c
+		summarizeBy: none
+		sourceColumn: fecha_generacion
+
+		variation Variation
+			isDefault
+			relationship: adfe2c2d-5d8c-4cfc-9627-82cd7e96087c
+			defaultHierarchy: LocalDateTable_a8bd292c-cd6f-43f0-867f-6d5c80334b3d.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_objetivo
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c77553e0-7f3d-4e40-99f0-4dcc251f2dc1
+		summarizeBy: none
+		sourceColumn: fecha_objetivo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column horizonte_semanas
+		dataType: int64
+		formatString: 0
+		lineageTag: c9211078-03a6-40bb-9a96-2b8cff048dd7
+		summarizeBy: none
+		sourceColumn: horizonte_semanas
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: fbf376a8-e68c-4ce0-a74b-c77cac22a3ad
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 19562d21-51e6-4b12-9c2c-9209cfb0a009
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: b6f85830-ffdf-4fa8-84b2-5d9c8b588103
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: df6f98b1-9058-4869-ab6d-2ce2bcfad94c
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column prediccion_final
+		dataType: double
+		lineageTag: bb777e58-0043-4bfa-9a96-2ceeff6dfb7c
+		summarizeBy: sum
+		sourceColumn: prediccion_final
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modelo_seleccionado
+		dataType: string
+		lineageTag: 9aeb6156-bb31-48c9-99e5-2204265b4832
+		summarizeBy: none
+		sourceColumn: modelo_seleccionado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_ranking_distritos_pronostico = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    dbo_vw_ranking_distritos_pronostico = Origen{[Schema="dbo",Item="vw_ranking_distritos_pronostico"]}[Data]
+				in
+				    dbo_vw_ranking_distritos_pronostico
+
+	annotation PBI_ResultType = Table
+

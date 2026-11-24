@@ -1,0 +1,126 @@
+table vw_resumen_nacional_pronostico
+	lineageTag: 28380efa-b041-49d6-875b-e5befb48bcbd
+
+	measure 'Casos Pronosticados' =
+			
+			SUM('vw_resumen_nacional_pronostico'[casos_pronosticados])
+		lineageTag: 8050ffa3-f9f5-4709-ab6d-004bfd9d52b2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Distritos Pronosticados' =
+			
+			MAX('vw_resumen_nacional_pronostico'[distritos])
+		formatString: 0
+		lineageTag: 00ae8bf0-f155-4d43-9773-7d9c643011e8
+
+	measure 'Fecha Generacion Pronostico' =
+			
+			CALCULATE(
+			    MAX('vw_resumen_nacional_pronostico'[fecha_generacion]),
+			    REMOVEFILTERS('DimFecha')
+			)
+		formatString: General Date
+		lineageTag: b521bb11-cb0c-4a36-b01a-cb0093e6e7b0
+
+	measure 'Inicio Pronostico' =
+			
+			MIN('vw_resumen_nacional_pronostico'[fecha_objetivo])
+		formatString: General Date
+		lineageTag: 77b32b47-a35e-4533-95a8-522314f93702
+
+	measure 'Fin Pronostico' =
+			
+			MAX('vw_resumen_nacional_pronostico'[fecha_objetivo])
+		formatString: General Date
+		lineageTag: 0e586dd1-82a0-4ef4-8b00-9a75a78a79af
+
+	column fecha_generacion
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2458db6a-ce67-45cf-a58e-bb3c0aabd9eb
+		summarizeBy: none
+		sourceColumn: fecha_generacion
+
+		variation Variation
+			isDefault
+			relationship: 8943bd57-3ec0-484d-878b-67cd8d724a16
+			defaultHierarchy: LocalDateTable_8218dd17-d765-4358-97d1-591d758403d2.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_objetivo
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4cd48374-51df-4f79-8861-5bbd71246da7
+		summarizeBy: none
+		sourceColumn: fecha_objetivo
+
+		variation Variation
+			isDefault
+			relationship: 2b863a84-cf21-464c-9ee7-9cc23ece5821
+			defaultHierarchy: LocalDateTable_f91f9edb-22f0-4017-b374-8de0d4fd16c7.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ano_objetivo
+		dataType: int64
+		formatString: 0
+		lineageTag: df078cbb-3944-4e93-93c0-b9b65ed27ad5
+		summarizeBy: sum
+		sourceColumn: ano_objetivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_objetivo
+		dataType: int64
+		formatString: 0
+		lineageTag: e9c58c6a-dd7e-4053-9b49-caaf98e2bf4d
+		summarizeBy: sum
+		sourceColumn: semana_objetivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column horizonte_semanas
+		dataType: int64
+		formatString: 0
+		lineageTag: 369b06d7-6feb-46fb-8627-5b7a91af313a
+		summarizeBy: none
+		sourceColumn: horizonte_semanas
+
+		annotation SummarizationSetBy = Automatic
+
+	column casos_pronosticados
+		dataType: double
+		lineageTag: ff808bb8-f9f7-4fb6-b440-33ac02e5366c
+		summarizeBy: sum
+		sourceColumn: casos_pronosticados
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column distritos
+		dataType: int64
+		formatString: 0
+		lineageTag: 78de4759-9228-4b3a-8195-7f9f354cea41
+		summarizeBy: sum
+		sourceColumn: distritos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_resumen_nacional_pronostico = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-NIUMH18V\SQLEXPRESS", "dengue_analytics"),
+				    dbo_vw_resumen_nacional_pronostico = Origen{[Schema="dbo",Item="vw_resumen_nacional_pronostico"]}[Data]
+				in
+				    dbo_vw_resumen_nacional_pronostico
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,40 @@
+TERCERA AUDITORIA - EDADES
+=============================================
+
+DISTRIBUCION POR TIPO DE EDAD:
+tipo_edad  registros  minimo  percentil_50  percentil_90  percentil_95  percentil_99   maximo
+        A    1058299       0          28.0          58.0          66.0          80.0 71963641
+        D        331       1          10.0          25.0          27.5          29.0       30
+        M       6644       1           8.0          11.0          11.0          11.0       58
+
+SEMANA 53 POR ANIO:
+ ano  registros
+2003         27
+2008        380
+2009         81
+2014        232
+2020       1183
+2025        337
+
+PRIMEROS 20 REGISTROS DE EDAD EXTREMA:
+    edad  edad_num tipo_edad  ano  semana ubigeo departamento     provincia              distrito sexo diagnostic tipo_dx
+71963641  71963641         A 2017      20 200107        PIURA         PIURA             CURA MORI    M      A97.1       C
+41964604  41964604         A 2017      20 200107        PIURA         PIURA             CURA MORI    F      A97.0       P
+ 2846395   2846395         A 2017      16 200109        PIURA         PIURA              LA ARENA    M      A97.0       P
+ 2692587   2692587         A 2017      17 200105        PIURA         PIURA              CATACAOS    M      A97.0       C
+  419454    419454         A 2017      20 200107        PIURA         PIURA             CURA MORI    M      A97.0       P
+  249906    249906         A 2017      19 200107        PIURA         PIURA             CURA MORI    M      A97.0       P
+  228718    228718         A 2017      44 240103       TUMBES        TUMBES               LA CRUZ    M      A97.0       P
+   35109     35109         A 2022      16 080910        CUSCO LA CONVENCION               PICHARI    F      A97.0       C
+    6161      6161         A 2017      17 200104        PIURA         PIURA              CASTILLA    M      A97.1       C
+    3767      3767         A 2017      18 200101        PIURA         PIURA                 PIURA    F      A97.1       C
+     814       814         A 2017      13 200104        PIURA         PIURA              CASTILLA    F      A97.0       C
+     330       330         A 2017      17 200101        PIURA         PIURA                 PIURA    M      A97.0       C
+     117       117         A 2023      25 150110         LIMA          LIMA                 COMAS    F      A97.0       P
+     113       113         A 2023      17 130105  LA LIBERTAD      TRUJILLO          LA ESPERANZA    M      A97.0       C
+     110       110         A 2023      21 200115        PIURA         PIURA VEINTISEIS DE OCTUBRE    F      A97.0       C
+     109       109         A 2024      21 150136         LIMA          LIMA            SAN MIGUEL    F      A97.0       C
+     106       106         A 2022      10 220805   SAN MARTIN         RIOJA          PARDO MIGUEL    F      A97.0       C
+     106       106         A 2024       9 110106          ICA           ICA               PARCONA    M      A97.0       C
+     105       105         A 2021      13 080901        CUSCO LA CONVENCION             SANTA ANA    F      A97.0       C
+     105       105         A 2023       5 200505        PIURA         PAITA              LA HUACA    M      A97.0       C

@@ -1,0 +1,268 @@
+table vw_historico_dengue
+	lineageTag: 11dcc950-1511-4539-b9d3-52a240586c66
+
+	measure 'Casos Reportados' =
+			
+			CALCULATE(
+			    SUM('vw_historico_dengue'[casos_reportados]),
+			    'vw_historico_dengue'[registro_minsa] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 0fc984eb-5ad6-4eee-92c6-2b431380d170
+
+	measure 'Registros MINSA' =
+			
+			CALCULATE(
+			    COUNTROWS('vw_historico_dengue'),
+			    'vw_historico_dengue'[registro_minsa] = TRUE()
+			)
+		formatString: 0
+		lineageTag: b1d0399b-5723-44d4-b8cb-03ff92c581d9
+
+	measure 'Distritos con Registro' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('vw_historico_dengue'[ubigeo]),
+			    'vw_historico_dengue'[registro_minsa] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 5bfbbedb-cb62-4395-8414-879fceb30f02
+
+	measure 'Promedio de Casos' =
+			
+			DIVIDE(
+			    [Casos Reportados],
+			    [Registros MINSA],
+			    0
+			)
+		lineageTag: 9142ba8c-ccbf-4986-829c-98d39d2eb5e0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Temperatura Media' =
+			
+			AVERAGE('vw_historico_dengue'[tmean])
+		lineageTag: 4a56ac53-65a7-4281-bf99-1425cb10ba9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Precipitacion Media' =
+			
+			AVERAGE('vw_historico_dengue'[ptot])
+		lineageTag: 6354b38e-f37d-4054-a328-3585317463d7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fecha Corte Historico' =
+			
+			CALCULATE(
+			    MAX('vw_historico_dengue'[fecha_inicio]),
+			    REMOVEFILTERS('DimFecha')
+			)
+		formatString: General Date
+		lineageTag: de8ec852-b898-450a-a8ac-742b7fedeb4b
+
+	measure 'Casos Año Anterior' =
+			
+			CALCULATE(
+			    [Casos Reportados],
+			    SAMEPERIODLASTYEAR('DimFecha'[Date])
+			)
+		formatString: 0
+		lineageTag: 9b634da1-06cf-4bb3-85c8-7801f492a9a7
+
+	measure 'Variacion Interanual %' =
+			
+			DIVIDE(
+			    [Casos Reportados] - [Casos Año Anterior],
+			    [Casos Año Anterior]
+			)
+		lineageTag: dd0c0698-4602-467f-9870-abf2485afd7c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ubigeo
+		dataType: string
+		lineageTag: a5f8e9ef-36fa-48ad-99bb-608f72fa930d
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: fd0bd5d3-18ec-437a-97dc-53efac53b78c
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: 298d3d24-bad1-49f8-9097-ee7b3b678385
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: d7568417-0f94-456f-96b5-a25d1a8b304c
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e163388-8846-40c0-bc95-aa5c88d88304
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana
+		dataType: int64
+		formatString: 0
+		lineageTag: 76f8a325-b0ca-432c-848a-225b4fc121e2
+		summarizeBy: sum
+		sourceColumn: semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_inicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: adaa5609-2d75-48ff-8bf4-92d56e240f9f
+		summarizeBy: none
+		sourceColumn: fecha_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_fin
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fc4136e4-04b7-418f-9255-56594a6d6b0c
+		summarizeBy: none
+		sourceColumn: fecha_fin
+
+		variation Variation
+			isDefault
+			relationship: f77073aa-29e7-454f-9776-efa103ee7de0
+			defaultHierarchy: LocalDateTable_91e91dcc-6dcf-44db-a17a-366d9c41ab75.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column casos_reportados
+		dataType: int64
+		formatString: 0
+		lineageTag: bdb967cd-97b6-48f8-89bd-b0fa533eac6c
+		summarizeBy: sum
+		sourceColumn: casos_reportados
+
+		annotation SummarizationSetBy = Automatic
+
+	column registro_minsa
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f8f04286-263f-413d-adb0-73f6c8cec684
+		summarizeBy: none
+		sourceColumn: registro_minsa
+
+		annotation SummarizationSetBy = Automatic
+
+	column poblacion_proyectada
+		dataType: double
+		lineageTag: 49609f4c-7397-41db-b2fc-3a6da6c20ed6
+		summarizeBy: sum
+		sourceColumn: poblacion_proyectada
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tmean
+		dataType: double
+		lineageTag: bfe129af-4d71-493c-8565-1b5bcb2d7b86
+		summarizeBy: sum
+		sourceColumn: tmean
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tmax
+		dataType: double
+		lineageTag: 04b9c718-1b0d-4423-8a43-81aba787f46d
+		summarizeBy: sum
+		sourceColumn: tmax
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tmin
+		dataType: double
+		lineageTag: 8fee9852-2489-4746-a892-f0bac1872f96
+		summarizeBy: sum
+		sourceColumn: tmin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column humr
+		dataType: double
+		lineageTag: 39094581-9949-4701-831d-70f11be27279
+		summarizeBy: sum
+		sourceColumn: humr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ptot
+		dataType: double
+		lineageTag: a47a0f49-cf05-4b06-9607-842d3635f117
+		summarizeBy: sum
+		sourceColumn: ptot
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column clima_recuperado
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2d2d048a-3698-417b-958c-5c58d798b8c1
+		summarizeBy: none
+		sourceColumn: clima_recuperado
+
+		annotation SummarizationSetBy = Automatic
+
+	column clima_grupo
+		dataType: string
+		lineageTag: 25831fea-aa32-481e-bdc8-01c0652a0c29
+		summarizeBy: none
+		sourceColumn: clima_grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_historico_dengue = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    dbo_vw_historico_dengue = Origen{[Schema="dbo",Item="vw_historico_dengue"]}[Data]
+				in
+				    dbo_vw_historico_dengue
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navegación
+

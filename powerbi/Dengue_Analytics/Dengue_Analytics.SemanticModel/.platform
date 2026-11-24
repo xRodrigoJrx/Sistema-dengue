@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Dengue_Analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a594cfa2-2879-48ee-90d0-ddf896d2f116"
+  }
+}

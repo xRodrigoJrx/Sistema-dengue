@@ -1,0 +1,27 @@
+
+AUDITORIA DE CONCENTRACION DE DUPLICADOS
+==================================================
+
+Registros originales procesados: 1,065,274
+
+Grupos repetidos: 95,078
+Registros dentro de grupos repetidos: 244,511
+Repeticiones adicionales: 149,433
+
+Frecuencia maxima: 27
+
+Comparacion con auditoria anterior:
+149,433 repeticiones adicionales.
+
+Diferencia:
+0
+
+Archivos generados:
+30_duplicados_por_anio.csv
+31_duplicados_por_departamento.csv
+32_duplicados_por_diagnostico.csv
+33_duplicados_por_tipo.csv
+34_top_100_repeticiones.csv
+35_distribucion_frecuencias.csv
+
+No se eliminaron registros.

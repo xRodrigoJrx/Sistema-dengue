@@ -1,0 +1,150 @@
+table fact_metricas_modelo
+	lineageTag: 447d7fff-c4c2-4c0e-99c9-a6a44696ccef
+
+	measure 'MAE Promedio' =
+			
+			AVERAGE('fact_metricas_modelo'[mae])
+		lineageTag: 8613d209-d91b-4dcc-8c51-b14ae34d88a5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'RMSE Promedio' =
+			
+			AVERAGE('fact_metricas_modelo'[rmse])
+		lineageTag: 6670cd11-47d2-40df-8af8-bcd2121d275e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'R2 Promedio' =
+			
+			AVERAGE('fact_metricas_modelo'[r2])
+		lineageTag: f9ba1192-215f-4734-8934-3657be907434
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: eab3a65b-fcaf-49a3-8476-d4821e7498d2
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column horizonte
+		dataType: int64
+		formatString: 0
+		lineageTag: 0addb829-fc4c-4ded-9118-9633324e20df
+		summarizeBy: none
+		sourceColumn: horizonte
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodo
+		dataType: string
+		lineageTag: 7285aca9-37aa-4474-bfbf-cc2b0015b028
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelo
+		dataType: string
+		lineageTag: 537eb009-a74f-42df-84a6-5a310c8f1170
+		summarizeBy: none
+		sourceColumn: modelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column registros_evaluados
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e131e07-975f-4e67-bdb5-fcd1e7bdf298
+		summarizeBy: sum
+		sourceColumn: registros_evaluados
+
+		annotation SummarizationSetBy = Automatic
+
+	column mae
+		dataType: double
+		lineageTag: f6a60ab1-6a67-4012-ba7d-5b8c7c4c0c8f
+		summarizeBy: sum
+		sourceColumn: mae
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rmse
+		dataType: double
+		lineageTag: 318ceb8c-7c87-41b0-a58b-31e45cbd1bf2
+		summarizeBy: sum
+		sourceColumn: rmse
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column r2
+		dataType: double
+		lineageTag: 16ad2ab0-7416-4be2-a377-d33e38c65842
+		summarizeBy: sum
+		sourceColumn: r2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mae_positivos
+		dataType: double
+		lineageTag: b9abcf73-f5a1-45c3-9108-8ed662f1d33c
+		summarizeBy: sum
+		sourceColumn: mae_positivos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column casos_reales
+		dataType: double
+		lineageTag: e2508a8f-3fcd-4249-b444-b4197c66796a
+		summarizeBy: sum
+		sourceColumn: casos_reales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column casos_predichos
+		dataType: double
+		lineageTag: f94e5f9e-eeb2-45af-b90e-1d23fb7d9fa5
+		summarizeBy: sum
+		sourceColumn: casos_predichos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column error_total_pct
+		dataType: double
+		lineageTag: fe7de0f3-b435-4c96-89bf-5a1a14f5e9aa
+		summarizeBy: sum
+		sourceColumn: error_total_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_metricas_modelo = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-NIUMH18V\SQLEXPRESS", "dengue_analytics"),
+				    dbo_fact_metricas_modelo = Origen{[Schema="dbo",Item="fact_metricas_modelo"]}[Data]
+				in
+				    dbo_fact_metricas_modelo
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

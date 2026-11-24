@@ -1,0 +1,88 @@
+table DimFecha
+	lineageTag: 28ca595a-cadd-4160-9b45-6d91a4fe553d
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 7e89dfa9-f6a1-4f76-8f30-a7ca290fc553
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: 51736c1c-19f2-44b9-9b50-0f365d725da4
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNumero
+		formatString: 0
+		lineageTag: e2202346-581e-4fcc-bf8b-55a2e5df5fab
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MesNumero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: 796f23c4-072a-4b62-9a7a-df1de6ed4e8b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+		sortByColumn: MesNumero
+
+		annotation SummarizationSetBy = Automatic
+
+	column AñoMes
+		lineageTag: d94ff125-8649-407f-98ed-67db0b174bf5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AñoMes]
+		sortByColumn: AñoMesOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AñoMesOrden
+		formatString: 0
+		lineageTag: 8168457e-4877-4cf6-9cb1-d6968b1cbd40
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [AñoMesOrden]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: 70dfad90-4928-4358-88de-65645136ccc9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimFecha = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDAR(
+				        DATE(2000, 1, 1),
+				        DATE(2030, 12, 31)
+				    ),
+				    "Año", YEAR([Date]),
+				    "MesNumero", MONTH([Date]),
+				    "Mes", FORMAT([Date], "MMMM"),
+				    "AñoMes", FORMAT([Date], "yyyy-MM"),
+				    "AñoMesOrden",
+				        YEAR([Date]) * 100 + MONTH([Date]),
+				    "Trimestre",
+				        "T" & FORMAT([Date], "Q")
+				)
+
+	annotation PBI_Id = 33c2bfbd2d3446738ed35b79d66b9699
+

@@ -1,0 +1,4 @@
+﻿tipo_edad,registros,minimo,percentil_50,percentil_90,percentil_95,percentil_99,maximo
+A,1058299,0,28.0,58.0,66.0,80.0,71963641
+D,331,1,10.0,25.0,27.5,29.0,30
+M,6644,1,8.0,11.0,11.0,11.0,58

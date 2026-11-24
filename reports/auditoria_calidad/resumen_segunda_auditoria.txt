@@ -1,0 +1,27 @@
+SEGUNDA AUDITORIA - MINSA
+=============================================
+Total registros: 1,065,274
+Años encontrados: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Departamentos: 23
+UBIGEO diferentes: 662
+Años fuera del rango 2000-2025: 0
+Semanas fuera del rango 1-53: 0
+Edades no numericas: 0
+Edad minima: 0
+Edad maxima: 71963641
+UBIGEO con multiples ubicaciones: 0
+
+TIPOS DE EDAD:
+[('A', 1058299), ('M', 6644), ('D', 331)]
+
+SEXO:
+[('F', 572211), ('M', 493063)]
+
+TIPOS DE DIAGNOSTICO:
+[('C', 955112), ('P', 110162)]
+
+DIAGNOSTICOS:
+[('A97.0', 944670), ('A97.1', 116407), ('A97.2', 4197)]
+
+VALORES VACIOS:
+[('localcod', 149652), ('localidad', 123635), ('diresa', 23), ('departamento', 0), ('provincia', 0), ('distrito', 0), ('enfermedad', 0), ('ano', 0), ('semana', 0), ('diagnostic', 0), ('tipo_dx', 0), ('ubigeo', 0), ('edad', 0), ('tipo_edad', 0), ('sexo', 0)]

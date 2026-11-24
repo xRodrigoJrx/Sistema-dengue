@@ -1,0 +1,267 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "9ffd88c25db84f5e9390",
+  "position": {
+    "width": 1840,
+    "y": 544,
+    "z": 6000,
+    "x": 40,
+    "tabOrder": 6000,
+    "height": 480
+  },
+  "visual": {
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "departamento"
+                }
+              },
+              "nativeQueryRef": "departamento",
+              "active": true,
+              "queryRef": "vw_ranking_distritos_pronostico.departamento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "provincia"
+                }
+              },
+              "nativeQueryRef": "provincia",
+              "active": true,
+              "queryRef": "vw_ranking_distritos_pronostico.provincia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "distrito"
+                }
+              },
+              "nativeQueryRef": "distrito",
+              "active": true,
+              "queryRef": "vw_ranking_distritos_pronostico.distrito"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "horizonte_semanas"
+                }
+              },
+              "nativeQueryRef": "horizonte_semanas",
+              "active": true,
+              "queryRef": "vw_ranking_distritos_pronostico.horizonte_semanas"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "modelo_seleccionado"
+                }
+              },
+              "nativeQueryRef": "modelo_seleccionado",
+              "active": true,
+              "queryRef": "vw_ranking_distritos_pronostico.modelo_seleccionado"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_ranking_distritos_pronostico"
+                    }
+                  },
+                  "Property": "Pronostico Distrital"
+                }
+              },
+              "nativeQueryRef": "Pronostico Distrital",
+              "queryRef": "vw_ranking_distritos_pronostico.Pronostico Distrital"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#17324D'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle de pronósticos por distrito y horizonte'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DCE5ED'"
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualType": "pivotTable",
+    "drillFilterOtherVisuals": true
+  }
+}
