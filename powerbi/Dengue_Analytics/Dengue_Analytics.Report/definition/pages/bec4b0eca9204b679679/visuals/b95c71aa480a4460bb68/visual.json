@@ -199,7 +199,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Métricas promedio de los modelos bajo los filtros seleccionados.'"
+                  "Value": "'Para comparar los modelos con las referencias simples, elige un horizonte y el periodo de prueba (test).'"
                 }
               }
             },

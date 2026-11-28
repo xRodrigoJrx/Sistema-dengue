@@ -19,28 +19,28 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "vw_resumen_nacional_pronostico"
+                      "Entity": "vw_ranking_distritos_pronostico"
                     }
                   },
-                  "Property": "Casos Pronosticados"
+                  "Property": "Pronostico Distrital"
                 }
               },
-              "nativeQueryRef": "Casos Pronosticados",
-              "queryRef": "vw_resumen_nacional_pronostico.Casos Pronosticados"
+              "nativeQueryRef": "Pronostico Distrital",
+              "queryRef": "vw_ranking_distritos_pronostico.Pronostico Distrital"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "vw_resumen_nacional_pronostico"
+                      "Entity": "vw_ranking_distritos_pronostico"
                     }
                   },
-                  "Property": "Distritos Pronosticados"
+                  "Property": "Distritos Evaluados"
                 }
               },
-              "nativeQueryRef": "Distritos Pronosticados",
-              "queryRef": "vw_resumen_nacional_pronostico.Distritos Pronosticados"
+              "nativeQueryRef": "Distritos Evaluados",
+              "queryRef": "vw_ranking_distritos_pronostico.Distritos Evaluados"
             },
             {
               "field": {
@@ -213,7 +213,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Casos estimados según el filtro: sin selección, suma de las cuatro semanas; con selección, horizonte elegido.'"
+                  "Value": "'Estimaciones para los departamentos y horizontes seleccionados. Sin filtro de horizonte se suman las cuatro semanas.'"
                 }
               }
             },

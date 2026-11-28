@@ -40,14 +40,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "vw_historico_dengue"
+                      "Entity": "vw_dengue_demostracion_1_a_4"
                     }
                   },
-                  "Property": "Casos Reportados"
+                  "Property": "Notificaciones históricas del panel"
                 }
               },
-              "queryRef": "vw_historico_dengue.Casos Reportados",
-              "nativeQueryRef": "Casos Reportados"
+              "queryRef": "vw_dengue_demostracion_1_a_4.Notificaciones históricas del panel",
+              "nativeQueryRef": "Notificaciones históricas del panel"
             }
           ]
         }
@@ -60,7 +60,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Casos reportados por departamento'"
+                  "Value": "'Notificaciones por departamento en el año seleccionado'"
                 }
               }
             },
@@ -216,10 +216,10 @@
                         "Measure": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "vw_historico_dengue"
+                              "Entity": "vw_dengue_demostracion_1_a_4"
                             }
                           },
-                          "Property": "Casos Reportados"
+                          "Property": "Notificaciones históricas del panel"
                         }
                       },
                       "FillRule": {

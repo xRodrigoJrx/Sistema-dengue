@@ -39,14 +39,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "vw_resumen_nacional_pronostico"
+                      "Entity": "vw_ranking_distritos_pronostico"
                     }
                   },
-                  "Property": "Casos Pronosticados"
+                  "Property": "Pronostico Distrital"
                 }
               },
-              "queryRef": "vw_resumen_nacional_pronostico.Casos Pronosticados",
-              "nativeQueryRef": "Casos Pronosticados"
+              "queryRef": "vw_ranking_distritos_pronostico.Pronostico Distrital",
+              "nativeQueryRef": "Pronostico Distrital"
             }
           ]
         }
@@ -216,10 +216,10 @@
                         "Measure": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "vw_resumen_nacional_pronostico"
+                              "Entity": "vw_ranking_distritos_pronostico"
                             }
                           },
-                          "Property": "Casos Pronosticados"
+                          "Property": "Pronostico Distrital"
                         }
                       },
                       "FillRule": {
