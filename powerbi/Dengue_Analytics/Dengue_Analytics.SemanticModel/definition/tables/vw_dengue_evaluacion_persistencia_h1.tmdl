@@ -1,0 +1,116 @@
+table vw_dengue_evaluacion_persistencia_h1
+	lineageTag: 4b84cd29-fd3c-4f02-817a-510babfaf689
+
+	measure 'MAE retrospectivo' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[mae])
+		formatString: 0.00
+		lineageTag: a0920c82-53d6-4461-9833-59bed0a8ce13
+
+	measure 'RMSE retrospectivo' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[rmse])
+		formatString: 0.00
+		lineageTag: 0c0d124a-26b3-42d1-92f2-632f91b42e65
+
+	measure 'R² retrospectivo' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[r2])
+		formatString: 0.000
+		lineageTag: 2ce95469-9233-49ea-92a3-38f3423b69c2
+
+	measure 'Semanas positivas' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[semanas_positivas])
+		formatString: #,0
+		lineageTag: 884fdc23-078a-46ca-80de-ac09998c7240
+
+	measure 'Semanas evaluables' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[semanas_evaluables])
+		formatString: #,0
+		lineageTag: 238a4f3e-02f6-4f63-ae7d-19051aad006c
+
+	measure 'Cobertura de semanas positivas' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[cobertura_semanas])
+		formatString: 0.0%
+		lineageTag: 9253752d-e424-4366-908e-d0fd64f83820
+
+	measure 'Notificaciones observadas' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[volumen_observado])
+		formatString: #,0
+		lineageTag: b2bef736-7955-44bb-a9d0-3b685682f8ac
+
+	measure 'Volumen observado con estimación' = SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[cobertura_volumen])
+		formatString: 0.00%
+		lineageTag: a0ac1a8c-4068-48a9-8bd6-49dd90a02304
+
+	measure 'MAE prueba 2025' = CALCULATE(SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[mae]), vw_dengue_evaluacion_persistencia_h1[ano_objetivo] = 2025)
+		formatString: 0.00
+		lineageTag: f67dbc64-d2a8-4b4a-b4b2-73e08cbf7d46
+
+	measure 'Semanas positivas cubiertas en 2025' = CALCULATE(SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[cobertura_semanas]), vw_dengue_evaluacion_persistencia_h1[ano_objetivo] = 2025)
+		formatString: 0.0%
+		lineageTag: 81ae9c1c-79c9-4274-970b-d74451219945
+
+	measure 'Volumen observado cubierto en 2025' = CALCULATE(SELECTEDVALUE(vw_dengue_evaluacion_persistencia_h1[cobertura_volumen]), vw_dengue_evaluacion_persistencia_h1[ano_objetivo] = 2025)
+		formatString: 0.00%
+		lineageTag: 4605577b-7d1c-4bdc-9720-54de0993d582
+
+	column ano_objetivo
+		dataType: int64
+		lineageTag: 14fd9560-003a-4891-806e-c86e798c830d
+		summarizeBy: none
+		sourceColumn: ano_objetivo
+
+	column semanas_positivas
+		dataType: int64
+		lineageTag: 9d97c1c3-f6df-45bf-961e-4acedc03551b
+		summarizeBy: none
+		sourceColumn: semanas_positivas
+
+	column semanas_evaluables
+		dataType: int64
+		lineageTag: 6d6d6c5a-a6e1-451d-a187-249e9b66cf88
+		summarizeBy: none
+		sourceColumn: semanas_evaluables
+
+	column volumen_observado
+		dataType: int64
+		lineageTag: ee1299ff-3898-4b7d-806a-9b253f52c9f5
+		summarizeBy: none
+		sourceColumn: volumen_observado
+
+	column volumen_con_estimacion
+		dataType: int64
+		lineageTag: ba01c6af-d263-4456-be26-707641aae4d2
+		summarizeBy: none
+		sourceColumn: volumen_con_estimacion
+
+	column cobertura_semanas
+		dataType: double
+		lineageTag: 5af4e820-d2eb-4955-8016-5acf4e8610a3
+		summarizeBy: none
+		sourceColumn: cobertura_semanas
+
+	column cobertura_volumen
+		dataType: double
+		lineageTag: 8182e80f-bf71-4e9b-ae87-0db7f74e538f
+		summarizeBy: none
+		sourceColumn: cobertura_volumen
+
+	column mae
+		dataType: double
+		lineageTag: 7289395e-53b9-4ab9-9ed4-e618d41bbc30
+		summarizeBy: none
+		sourceColumn: mae
+
+	column rmse
+		dataType: double
+		lineageTag: 3eb13ab8-ce62-48c9-94a0-9ceab07a65dd
+		summarizeBy: none
+		sourceColumn: rmse
+
+	column r2
+		dataType: double
+		lineageTag: 2b3cff93-0326-4428-827c-416481e08916
+		summarizeBy: none
+		sourceColumn: r2
+
+	partition vw_dengue_evaluacion_persistencia_h1 = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    Vista = Origen{[Schema="dbo", Item="vw_dengue_evaluacion_persistencia_h1"]}[Data]
+				in
+				    Vista
+

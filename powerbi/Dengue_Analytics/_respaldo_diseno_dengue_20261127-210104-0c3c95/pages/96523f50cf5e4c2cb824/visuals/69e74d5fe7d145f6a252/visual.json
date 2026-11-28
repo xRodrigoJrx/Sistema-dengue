@@ -1,0 +1,325 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "69e74d5fe7d145f6a252",
+  "position": {
+    "width": 1840,
+    "y": 228,
+    "z": 2000,
+    "x": 40,
+    "tabOrder": 2000,
+    "height": 635
+  },
+  "visual": {
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "ano_objetivo"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.ano_objetivo",
+              "nativeQueryRef": "ano_objetivo",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "MAE retrospectivo"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.MAE retrospectivo",
+              "nativeQueryRef": "MAE retrospectivo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "RMSE retrospectivo"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.RMSE retrospectivo",
+              "nativeQueryRef": "RMSE retrospectivo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "R² retrospectivo"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.R² retrospectivo",
+              "nativeQueryRef": "R² retrospectivo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "Semanas positivas"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.Semanas positivas",
+              "nativeQueryRef": "Semanas positivas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "Semanas evaluables"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.Semanas evaluables",
+              "nativeQueryRef": "Semanas evaluables"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "Cobertura de semanas positivas"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.Cobertura de semanas positivas",
+              "nativeQueryRef": "Cobertura de semanas positivas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "Notificaciones observadas"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.Notificaciones observadas",
+              "nativeQueryRef": "Notificaciones observadas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dengue_evaluacion_persistencia_h1"
+                    }
+                  },
+                  "Property": "Volumen observado con estimación"
+                }
+              },
+              "queryRef": "vw_dengue_evaluacion_persistencia_h1.Volumen observado con estimación",
+              "nativeQueryRef": "Volumen observado con estimación"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#17324D'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Error y cobertura por año objetivo'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DCE5ED'"
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'El volumen cubierto corresponde a las notificaciones observadas en las semanas evaluables.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualType": "pivotTable",
+    "drillFilterOtherVisuals": true
+  }
+}

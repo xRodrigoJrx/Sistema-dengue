@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["vw_historico_dengue","vw_ranking_distritos_pronostico","vw_resumen_nacional_pronostico","fact_metricas_modelo","dim_distrito"]
+annotation PBI_QueryOrder = ["vw_historico_dengue","vw_ranking_distritos_pronostico","vw_resumen_nacional_pronostico","fact_metricas_modelo","dim_distrito","vw_dengue_presentacion_h1","vw_dengue_evaluacion_persistencia_h1","vw_dengue_demostracion_1_a_4","vw_dengue_evaluacion_distrital_1_a_4"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -25,6 +25,15 @@ ref table fact_metricas_modelo
 ref table dim_distrito
 ref table DimHorizonte
 ref table DimFecha
+ref table vw_dengue_presentacion_h1
+ref table LocalDateTable_f975b91a-773b-4c7a-8101-aa10c5493939
+ref table LocalDateTable_8f6ebbdf-300c-4b79-a9b8-4fa089b6c320
+ref table LocalDateTable_ffea394b-5c5d-4be1-96c3-e56153888f20
+ref table vw_dengue_evaluacion_persistencia_h1
+ref table vw_dengue_demostracion_1_a_4
+ref table vw_dengue_evaluacion_distrital_1_a_4
+ref table SelectorAnoDengue
+ref table SelectorVistaDengue
 
 ref cultureInfo es-ES
 

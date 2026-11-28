@@ -1,15 +1,16 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "5383934110b84306ab8a",
   "position": {
-    "width": 1456,
-    "y": 24,
+    "x": 451.66666666666669,
+    "y": 193.33333333333334,
     "z": 2000,
-    "x": 424,
-    "tabOrder": 2000,
-    "height": 104
+    "height": 136.66666666666669,
+    "width": 1456.6666666666667,
+    "tabOrder": 2000
   },
   "visual": {
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
         "Data": {
@@ -25,8 +26,8 @@
                   "Property": "Variacion Interanual %"
                 }
               },
-              "nativeQueryRef": "Variacion Interanual %",
-              "queryRef": "vw_historico_dengue.Variacion Interanual %"
+              "queryRef": "vw_historico_dengue.Variacion Interanual %",
+              "nativeQueryRef": "Variacion Interanual %"
             },
             {
               "field": {
@@ -39,8 +40,8 @@
                   "Property": "Temperatura Media"
                 }
               },
-              "nativeQueryRef": "Temperatura Media",
-              "queryRef": "vw_historico_dengue.Temperatura Media"
+              "queryRef": "vw_historico_dengue.Temperatura Media",
+              "nativeQueryRef": "Temperatura Media"
             },
             {
               "field": {
@@ -53,8 +54,8 @@
                   "Property": "Precipitacion Media"
                 }
               },
-              "nativeQueryRef": "Precipitacion Media",
-              "queryRef": "vw_historico_dengue.Precipitacion Media"
+              "queryRef": "vw_historico_dengue.Precipitacion Media",
+              "nativeQueryRef": "Precipitacion Media"
             },
             {
               "field": {
@@ -67,12 +68,55 @@
                   "Property": "Registros MINSA"
                 }
               },
-              "nativeQueryRef": "Registros MINSA",
-              "queryRef": "vw_historico_dengue.Registros MINSA"
+              "queryRef": "vw_historico_dengue.Registros MINSA",
+              "nativeQueryRef": "Registros MINSA"
             }
           ]
         }
       }
+    },
+    "objects": {
+      "accentBar": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#007E83'"
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -90,7 +134,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#17324D'"
+                      "Value": "'#123653'"
                     }
                   }
                 }
@@ -157,7 +201,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "12D"
                 }
               }
             },
@@ -166,7 +210,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#DCE5ED'"
+                      "Value": "'#007E83'"
                     }
                   }
                 }
@@ -195,28 +239,28 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "12D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "12D"
                 }
               }
             },
             "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "12D"
                 }
               }
             },
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "12D"
                 }
               }
             }
@@ -224,7 +268,6 @@
         }
       ]
     },
-    "visualType": "cardVisual",
     "drillFilterOtherVisuals": true
   }
 }

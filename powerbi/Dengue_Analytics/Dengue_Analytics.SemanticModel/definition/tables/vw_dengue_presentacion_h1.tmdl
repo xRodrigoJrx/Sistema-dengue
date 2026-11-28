@@ -1,0 +1,105 @@
+table vw_dengue_presentacion_h1
+	lineageTag: 5a9741dd-dbbb-4739-b186-b19b48351c00
+
+	measure 'Notificaciones estimadas' = SUM(vw_dengue_presentacion_h1[estimacion_h1])
+		formatString: #,0
+		lineageTag: 2085df6d-4c3d-4343-8c44-557394bcd688
+
+	measure 'Distritos con estimación' = COALESCE(COUNT(vw_dengue_presentacion_h1[estimacion_h1]), 0)
+		formatString: #,0
+		lineageTag: c72edcde-1259-40a3-9ef7-86b64c52d0c8
+
+	measure 'Distritos sin estimación' = COALESCE(COUNTROWS(vw_dengue_presentacion_h1), 0) - [Distritos con estimación]
+		formatString: #,0
+		lineageTag: e50763e6-6c9a-4a8f-8083-a9822287ca4c
+
+	column ubigeo
+		dataType: string
+		lineageTag: 09f4b11a-4aa3-41f7-a828-ca462a2cc03b
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+	column fecha_generacion
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 47dd9a16-4639-4f50-b618-8ab45d8fd6d3
+		summarizeBy: none
+		sourceColumn: fecha_generacion
+
+		variation Variation
+			isDefault
+			relationship: 4d2423c4-6473-4474-8c56-2a97e11730e7
+			defaultHierarchy: LocalDateTable_f975b91a-773b-4c7a-8101-aa10c5493939.'Jerarquía de fechas'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_origen
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9c4e00ab-c830-4b5c-994d-d993ed072b18
+		summarizeBy: none
+		sourceColumn: fecha_origen
+
+		variation Variation
+			isDefault
+			relationship: 911a1a32-80c5-4b00-9723-13815a0a1054
+			defaultHierarchy: LocalDateTable_8f6ebbdf-300c-4b79-a9b8-4fa089b6c320.'Jerarquía de fechas'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_objetivo
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e8617cb8-ae69-4f17-bffe-dd6ff2e01ac8
+		summarizeBy: none
+		sourceColumn: fecha_objetivo
+
+		variation Variation
+			isDefault
+			relationship: 3e1ef999-8430-4df1-b80f-a8821044509d
+			defaultHierarchy: LocalDateTable_ffea394b-5c5d-4be1-96c3-e56153888f20.'Jerarquía de fechas'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column horizonte_semanas
+		dataType: int64
+		lineageTag: a69cb80d-e167-4b53-b3e3-7ebb87c4d495
+		summarizeBy: sum
+		sourceColumn: horizonte_semanas
+
+		annotation SummarizationSetBy = Automatic
+
+	column estimacion_h1
+		dataType: double
+		lineageTag: f83ad0f8-9e47-4e98-aca6-18031d6e8ac9
+		summarizeBy: sum
+		sourceColumn: estimacion_h1
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitud_mapa = IF(NOT ISBLANK(vw_dengue_presentacion_h1[estimacion_h1]), RELATED(dim_distrito[latitud]))
+		dataType: double
+		lineageTag: 65ccaadc-e3a7-4616-98a8-599abf3c981a
+		dataCategory: Latitude
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitud_mapa = IF(NOT ISBLANK(vw_dengue_presentacion_h1[estimacion_h1]), RELATED(dim_distrito[longitud]))
+		dataType: double
+		lineageTag: a1e993e5-02a0-456b-a84f-12089eac475a
+		dataCategory: Longitude
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_dengue_presentacion_h1 = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    Vista = Origen{[Schema="dbo", Item="vw_dengue_presentacion_h1"]}[Data],
+				    Ubigeo = Table.TransformColumns(Vista, {{"ubigeo", each Text.PadStart(Text.Trim(Text.From(_)), 6, "0"), type text}})
+				in
+				    Ubigeo
+

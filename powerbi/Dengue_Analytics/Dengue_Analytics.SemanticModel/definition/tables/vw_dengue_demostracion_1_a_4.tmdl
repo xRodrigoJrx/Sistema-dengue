@@ -1,0 +1,132 @@
+table vw_dengue_demostracion_1_a_4
+	lineageTag: 23871997-11cf-5da1-8b16-9eab4f4f3e23
+
+	measure 'Modo del panel' = SELECTEDVALUE(SelectorVistaDengue[vista], "Demostración")
+		lineageTag: d53099fb-54b8-5905-b9f9-0ee4fa4c93fc
+
+	measure 'Año del panel' = SELECTEDVALUE(SelectorAnoDengue[ano], 2025)
+		formatString: 0
+		lineageTag: 96fb48c0-1612-5d59-b32e-76a3bebed524
+
+	measure 'Horizonte del panel' = SELECTEDVALUE(DimHorizonte[horizonte], 1)
+		formatString: 0
+		lineageTag: e861389c-0c10-5866-848e-5b4cb3da59f7
+
+	measure 'Notificaciones históricas del panel' = VAR Anio = [Año del panel] RETURN CALCULATE(vw_historico_dengue[Casos Reportados], KEEPFILTERS(vw_historico_dengue[ano] = Anio))
+		formatString: #,0
+		lineageTag: b8867d88-2fac-595c-9e9f-2bfda4a5bf22
+
+	measure 'Fecha objetivo del panel' = VAR H = [Horizonte del panel] RETURN CALCULATE(MAX(vw_dengue_demostracion_1_a_4[fecha_objetivo]), vw_dengue_demostracion_1_a_4[horizonte_semanas] = H)
+		formatString: dd/MM/yyyy
+		lineageTag: 349ea7da-efb9-5719-9427-b935946b14aa
+
+	measure 'Estimación del horizonte' = VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_demostracion_1_a_4[estimacion]), vw_dengue_demostracion_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: b58da9e9-b2dc-5b90-abec-1c7a33a22980
+
+	measure 'Semanas positivas del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[semanas_positivas]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: 13765421-f04b-5e72-af09-bd4df9f1030e
+
+	measure 'Semanas evaluables del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[semanas_evaluables]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: 5c421a2c-39e5-5892-ad15-d0c047d221c1
+
+	measure 'Volumen observado del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[volumen_observado]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: 91d44419-ecc4-592d-9d20-6e1b3416deb2
+
+	measure 'Volumen evaluable del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[volumen_con_estimacion]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: 0d982819-5e03-57ec-8e1e-fda46191b03f
+
+	measure 'Suma de errores del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[error_absoluto]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: 1d5d6be6-0ee9-5c43-aac8-bd1e7ae2e3ea
+
+	measure 'Suma de cuadrados del panel' = VAR Anio = [Año del panel] VAR H = [Horizonte del panel] RETURN CALCULATE(SUM(vw_dengue_evaluacion_distrital_1_a_4[error_cuadratico]), vw_dengue_evaluacion_distrital_1_a_4[ano_objetivo] = Anio, vw_dengue_evaluacion_distrital_1_a_4[horizonte_semanas] = H)
+		formatString: #,0
+		lineageTag: cd5cb1df-6aa9-5881-bbca-323299710118
+
+	measure 'MAE del panel' = DIVIDE([Suma de errores del panel], [Semanas evaluables del panel])
+		formatString: 0.00
+		lineageTag: 33f89712-4dc2-58cc-8ef7-1c0e9845bdcc
+
+	measure 'RMSE del panel' = VAR Mse = DIVIDE([Suma de cuadrados del panel], [Semanas evaluables del panel]) RETURN IF(NOT ISBLANK(Mse), SQRT(Mse))
+		formatString: 0.00
+		lineageTag: 8a319df5-9cec-5b03-9127-c9449c932310
+
+	measure 'Cobertura de semanas del panel' = DIVIDE([Semanas evaluables del panel], [Semanas positivas del panel])
+		formatString: 0.0%
+		lineageTag: fa164941-1e09-5c1a-b913-ab2c94e8c103
+
+	measure 'Cobertura del volumen del panel' = DIVIDE([Volumen evaluable del panel], [Volumen observado del panel])
+		formatString: 0.00%
+		lineageTag: f9d9ec97-e198-5a06-ae65-f3610b17cb7a
+
+	measure 'Medida del mapa' = SWITCH([Modo del panel], "Histórico", [Notificaciones históricas del panel], "Evaluación", [MAE del panel], [Estimación del horizonte])
+		formatString: #,0.##
+		lineageTag: a2d643ee-f447-55aa-9d73-d8e59f2a2f2a
+
+	measure 'Distrito con valor en el mapa' = IF(NOT ISBLANK([Medida del mapa]), 1)
+		formatString: 0
+		lineageTag: 0f9e82d1-72d7-5e97-a027-446fd97710ed
+
+	measure 'Distritos visibles' = COALESCE(COUNTROWS(FILTER(VALUES(dim_distrito[ubigeo]), NOT ISBLANK([Medida del mapa]))), 0)
+		formatString: #,0
+		lineageTag: edc1a43c-c18a-5963-80ce-76f840eec10a
+
+	measure 'Contexto del mapa' = VAR Anio = FORMAT([Año del panel], "0") VAR H = FORMAT([Horizonte del panel], "0") RETURN SWITCH([Modo del panel], "Histórico", "Notificaciones registradas · " & Anio, "Evaluación", "MAE distrital · " & Anio & " · +" & H, "Demostración · " & FORMAT([Fecha objetivo del panel], "dd/MM/yyyy") & " · +" & H)
+		lineageTag: 0db58442-9507-54de-8de2-aceb4f861b89
+
+	measure 'Contexto de evaluación' = FORMAT([Año del panel], "0") & " · +" & FORMAT([Horizonte del panel], "0") & " semanas"
+		lineageTag: 94bb9313-af18-5ae4-bbe6-25d805e2b285
+
+	column ubigeo
+		dataType: string
+		lineageTag: 277662c9-4ef8-51be-9d80-62ec1af2b99e
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+	column fecha_origen
+		dataType: dateTime
+		formatString: dd/MM/yyyy
+		lineageTag: 192dc44d-f3b9-5b66-9410-31c3c925fec4
+		summarizeBy: none
+		sourceColumn: fecha_origen
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_objetivo
+		dataType: dateTime
+		formatString: dd/MM/yyyy
+		lineageTag: 52f70dfd-4c4d-5a2a-aec7-0bfb3d5fce75
+		summarizeBy: none
+		sourceColumn: fecha_objetivo
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column horizonte_semanas
+		dataType: int64
+		lineageTag: ffcd4076-664b-5316-a3dd-e0189c890fc4
+		summarizeBy: none
+		sourceColumn: horizonte_semanas
+
+	column estimacion
+		dataType: int64
+		lineageTag: 8adf4718-4a10-5653-b1f7-fc24e250193f
+		summarizeBy: none
+		sourceColumn: estimacion
+
+	partition vw_dengue_demostracion_1_a_4 = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    Vista = Origen{[Schema="dbo", Item="vw_dengue_demostracion_1_a_4"]}[Data],
+				    Ubigeo = Table.TransformColumns(Vista, {{"ubigeo", each Text.PadStart(Text.Trim(Text.From(_)), 6, "0"), type text}})
+				in
+				    Ubigeo
+
+	annotation PBI_ResultType = Table
+

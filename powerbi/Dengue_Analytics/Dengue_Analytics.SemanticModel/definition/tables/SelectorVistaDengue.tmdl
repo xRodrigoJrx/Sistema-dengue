@@ -1,0 +1,14 @@
+table SelectorVistaDengue
+	lineageTag: 0cfa2afc-cf08-5384-ba5b-1481ccd24f04
+
+	column vista
+		dataType: string
+		lineageTag: bbd3d982-d763-5790-b922-f3858a888211
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [vista]
+
+	partition SelectorVistaDengue = calculated
+		mode: import
+		source = DATATABLE("vista", STRING, {{"Histórico"}, {"Demostración"}, {"Evaluación"}})
+

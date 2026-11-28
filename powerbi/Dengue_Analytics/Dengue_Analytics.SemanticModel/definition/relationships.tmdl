@@ -55,3 +55,30 @@ relationship 16618703-7e71-64ac-03b8-a8765dd96fb1
 	fromColumn: DimFecha.Date
 	toColumn: vw_resumen_nacional_pronostico.fecha_objetivo
 
+relationship bfcab1a8-d7cb-4eaa-b7f7-7eb3adbcfc91
+	fromColumn: vw_dengue_presentacion_h1.ubigeo
+	toColumn: dim_distrito.ubigeo
+
+relationship 4d2423c4-6473-4474-8c56-2a97e11730e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dengue_presentacion_h1.fecha_generacion
+	toColumn: LocalDateTable_f975b91a-773b-4c7a-8101-aa10c5493939.Date
+
+relationship 911a1a32-80c5-4b00-9723-13815a0a1054
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dengue_presentacion_h1.fecha_origen
+	toColumn: LocalDateTable_8f6ebbdf-300c-4b79-a9b8-4fa089b6c320.Date
+
+relationship 3e1ef999-8430-4df1-b80f-a8821044509d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dengue_presentacion_h1.fecha_objetivo
+	toColumn: LocalDateTable_ffea394b-5c5d-4be1-96c3-e56153888f20.Date
+
+relationship 1d5d2c70-1f10-5880-bdca-48f90e648719
+	fromColumn: vw_dengue_demostracion_1_a_4.ubigeo
+	toColumn: dim_distrito.ubigeo
+
+relationship 4efcbdaa-0df4-5e0e-a07a-064bf73aaddc
+	fromColumn: vw_dengue_evaluacion_distrital_1_a_4.ubigeo
+	toColumn: dim_distrito.ubigeo
+

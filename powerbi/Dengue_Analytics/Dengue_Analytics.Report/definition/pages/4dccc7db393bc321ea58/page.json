@@ -3,6 +3,32 @@
   "name": "4dccc7db393bc321ea58",
   "displayName": "02_Evolucion_Historica",
   "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920
+  "height": 1594,
+  "width": 1976,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EDF4F5'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
 }

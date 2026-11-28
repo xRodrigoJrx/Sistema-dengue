@@ -1,0 +1,14 @@
+table SelectorAnoDengue
+	lineageTag: 133a65c3-d2a3-5f03-8d86-1e4fe1aad9c1
+
+	column ano
+		dataType: int64
+		lineageTag: 71ed7e74-281a-52d0-a634-442000300f91
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ano]
+
+	partition SelectorAnoDengue = calculated
+		mode: import
+		source = DISTINCT(SELECTCOLUMNS(vw_historico_dengue, "ano", vw_historico_dengue[ano]))
+

@@ -1,0 +1,69 @@
+table vw_dengue_evaluacion_distrital_1_a_4
+	lineageTag: 2bc7372c-b670-5e24-9a77-ae69f8528842
+
+	column ubigeo
+		dataType: string
+		lineageTag: 1d2c0685-3242-5efc-ae81-e3b0ed365608
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+	column ano_objetivo
+		dataType: int64
+		lineageTag: f2dd345d-2a63-54cb-95dd-b22e9fe17e66
+		summarizeBy: none
+		sourceColumn: ano_objetivo
+
+	column horizonte_semanas
+		dataType: int64
+		lineageTag: 65789bc0-fde6-51c4-867c-440bfd1c56ee
+		summarizeBy: none
+		sourceColumn: horizonte_semanas
+
+	column semanas_positivas
+		dataType: int64
+		lineageTag: ded031df-f33f-5595-b29d-e31dcf9ab1b7
+		summarizeBy: none
+		sourceColumn: semanas_positivas
+
+	column semanas_evaluables
+		dataType: int64
+		lineageTag: a58c999b-1625-586b-b8d6-b485438ffb73
+		summarizeBy: none
+		sourceColumn: semanas_evaluables
+
+	column volumen_observado
+		dataType: int64
+		lineageTag: 6b46f3e2-dec7-5b7a-87d4-27ea409e7e6b
+		summarizeBy: none
+		sourceColumn: volumen_observado
+
+	column volumen_con_estimacion
+		dataType: int64
+		lineageTag: f7a1203d-d00c-5993-87c9-6c52484e1b7e
+		summarizeBy: none
+		sourceColumn: volumen_con_estimacion
+
+	column error_absoluto
+		dataType: double
+		lineageTag: e81f6408-76d6-5e10-bdba-9c1bdae42d98
+		summarizeBy: none
+		sourceColumn: error_absoluto
+
+	column error_cuadratico
+		dataType: double
+		lineageTag: ae21e9bd-7a8c-54f5-b407-63a46131ba6a
+		summarizeBy: none
+		sourceColumn: error_cuadratico
+
+	partition vw_dengue_evaluacion_distrital_1_a_4 = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("127.0.0.1,51433", "dengue_analytics"),
+				    Vista = Origen{[Schema="dbo", Item="vw_dengue_evaluacion_distrital_1_a_4"]}[Data],
+				    Ubigeo = Table.TransformColumns(Vista, {{"ubigeo", each Text.PadStart(Text.Trim(Text.From(_)), 6, "0"), type text}})
+				in
+				    Ubigeo
+
+	annotation PBI_ResultType = Table
+

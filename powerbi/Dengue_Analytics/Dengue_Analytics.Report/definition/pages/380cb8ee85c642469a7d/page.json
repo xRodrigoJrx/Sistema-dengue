@@ -3,6 +3,32 @@
   "name": "380cb8ee85c642469a7d",
   "displayName": "03_Pronosticos",
   "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920
+  "height": 1278,
+  "width": 1976,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EDF4F5'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
 }

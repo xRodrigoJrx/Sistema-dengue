@@ -3,6 +3,32 @@
   "name": "922c39c15ff3ae7d3b74",
   "displayName": "01_Panorama_Nacional",
   "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920
+  "height": 1278,
+  "width": 1976,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EDF4F5'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
 }
